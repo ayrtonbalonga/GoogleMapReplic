@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/SettingSheetContainer"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+
+    >
+
+
+    <Button
+        android:id="@+id/btnSaveSetting"
+        android:layout_width="283dp"
+        android:layout_height="62dp"
+        android:background="@drawable/button_background"
+
+        android:text="Save"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557" />
+
+    <CheckBox
+        android:id="@+id/cbMiles"
+        android:layout_width="122dp"
+        android:layout_height="59dp"
+        android:background="@color/colorSecondaryText"
+        android:text="Miles"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238" />
+
+    <CheckBox
+        android:id="@+id/cbKilometers"
+        android:layout_width="166dp"
+        android:layout_height="55dp"
+        android:background="@color/colorSecondaryText"
+        android:text="Kilometers"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.404" />
+
+    <ImageView
+        android:id="@+id/ivCancelSetting"
+        android:layout_width="57dp"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"
+        android:src="@drawable/ic_cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="295dp"
+        android:layout_height="46dp"
+        android:text="Do you want distances in:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103"
+        tools:layout_editor_absoluteX="35dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
